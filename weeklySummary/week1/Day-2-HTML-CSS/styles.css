@@ -1,0 +1,23 @@
+#lucyCard {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border: solid 5px blue;
+}
+
+#butterCard {
+    margin-bottom: 5px;
+    border: solid 5px green;
+    padding-bottom: 5px;
+}
+
+#cocoCard {
+    margin-bottom: 5px;
+    border: solid 5px red;
+    padding-bottom: 5px;
+}
+
+.name {
+    border-bottom: solid 5px gray;
+    padding-bottom: 10px;
+    text-align: center;
+}
