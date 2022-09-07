@@ -10,11 +10,11 @@ This will be your main place for cohort-related materials!
 ## 🐣 Junior Phase
 ### 📓 Junior Phase Weekly Lectures and Materials
 
-#### [📅 Week 1](WEEK1.md)
+#### [📅 Week 1](./weeklySummary/week1/SUMMARY.md)
 
-#### [📅 Week 2](WEEK2.md)
+#### [📅 Week 2](./weeklySummary/week2/SUMMARY.md)
 
-#### [📅 Week 3](WEEK3.md)
+#### [📅 Week 3](./weeklySummary/week3/SUMMARY.md)
 
 - **Git Workflow and Semantic Commit Message**
   - [🔗 Semantic Commit Messages](http://karma-runner.github.io/4.0/dev/git-commit-msg.html)
