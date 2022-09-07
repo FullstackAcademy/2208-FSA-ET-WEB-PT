@@ -4,6 +4,9 @@ This will be your main place for cohort-related materials!
 
 ## [📎 Helpful Resources/Links](RESOURCES.md)
 
+## Inclass Videos
+- On Engageli - tutorial coming soon
+
 ## 🐣 Junior Phase
 ### 📓 Junior Phase Weekly Lectures and Materials
 
