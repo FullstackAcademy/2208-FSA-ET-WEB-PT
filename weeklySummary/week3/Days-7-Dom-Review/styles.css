@@ -1,0 +1,31 @@
+body {
+    background-color: lightblue;
+}
+
+.non-mobile {
+    /* display: none; */
+    /* position: absolute;
+    opacity: 0;
+    pointer-events: none; */
+}
+
+.invisible {
+    opacity: 0;
+}
+.cookieImage {
+    height: 300px;
+    width: auto;
+}
+.purchaseButton {
+    width: auto;
+    height: 50px;
+    margin: 10px;
+}
+@media (min-width: 560px) {
+    .non-mobile {
+        /* display: block; */
+        /* position: relative;
+        opacity: 1;
+        pointer-events: all; */
+    }
+}

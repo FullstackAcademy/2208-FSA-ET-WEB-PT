@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        background-color: lightsalmon;
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "2208-html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Semiroundpizza8/2208-DOM-Inclass-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Semiroundpizza8/2208-DOM-Inclass-example/issues"
+  },
+  "homepage": "https://github.com/Semiroundpizza8/2208-DOM-Inclass-example#readme",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
