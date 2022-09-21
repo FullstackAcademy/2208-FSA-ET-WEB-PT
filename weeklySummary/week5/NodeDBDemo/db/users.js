@@ -15,7 +15,14 @@ const getAllUsers = async () => {
     return data.rows;
 };
 
+const deleteDemoUser = async (id) => {
+    const data = await client.query(`
+        DELETE FROM demo WHERE id=$1;
+    `, [id]);
+}
+
 module.exports = {
     createDemoUser,
+    deleteDemoUser,
     getAllUsers
 }

@@ -18,6 +18,37 @@ app.get("/", async (req, res, next) => {
   } catch (error) { next(error) }
 });
 
+app.get("/search/:titleToBeFound", async (req, res, next) => {
+  try {
+    const { titleToBeFound } = req.params;
+
+    // const searchQuery = `
+    //   SELECT 
+    //     posts.*,
+    //     users.name,
+    //     counting.upvotes 
+    //   FROM posts
+    //   INNER JOIN users 
+    //   ON users.id = posts.userId
+    //   LEFT JOIN (
+    //     SELECT postId,
+    //     COUNT(*) as upvotes
+    //     FROM upvotes GROUP BY postId
+    //   )
+    //   AS counting 
+    //   ON posts.id = counting.postId
+    //   WHERE posts.title = ${titleToBeFound}
+    //   `;
+
+    const data = await client.query(baseQuery);
+    data.rows.filter((post) => {
+      return post.title.includes(titleToBeFound);
+    })
+
+    res.send(postList(data.rows));
+  } catch (error) { next(error) }
+});
+
 app.get("/posts/:id", async (req, res, next) => {
   try {
     const data = await client.query(baseQuery + "WHERE posts.id = $1", [req.params.id]);

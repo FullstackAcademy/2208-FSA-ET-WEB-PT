@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const {
-    getAllUsers, createDemoUser
+    getAllUsers, createDemoUser, deleteDemoUser
 } = require('../db/users');
 
 //     GET localhost:3000/api/users/
@@ -23,6 +23,12 @@ router.post("/", async (req, res, next) => {
     await createDemoUser(req.body.name);
 
     res.send("User created!");
+})
+
+router.delete("/:id", async (req, res, next) => {
+    await deleteDemoUser(+req.params.id);
+
+    res.send("User deleted!");
 })
 
 module.exports = router;
