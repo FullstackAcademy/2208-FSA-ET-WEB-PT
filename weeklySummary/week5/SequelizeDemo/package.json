@@ -1,0 +1,17 @@
+{
+  "name": "sequelizedemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "seed:dev": "nodemon seed.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "sequelize": "^6.23.0"
+  }
+}
