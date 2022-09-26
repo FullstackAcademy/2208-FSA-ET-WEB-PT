@@ -5,6 +5,12 @@ const {
 const express = require("express");
 const app = express();
 
+app.use(express.urlencoded({ extended: false }))
+
+app.post("/", (req, res, next) => {
+  res.send(req.body)
+})
+
 app.get("/", async (req, res, next) => {
   const posts = await Post.findAll({
     include: [
