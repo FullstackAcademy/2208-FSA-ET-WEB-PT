@@ -60,6 +60,12 @@ const User = db.define('user', {
     }
 });
 
+const Group = db.define('group', {
+    name: {
+        type: Sequelize.STRING,
+        allowNull: false
+    }
+})
 
 const Post = db.define('post', {
     title: {
@@ -77,7 +83,12 @@ const Comment = db.define('comment', {
         allowNull: false
     },
     // userId: Post.id,
-})
+});
+
+const UserGroup = db.define('userGroup', {});
+
+User.belongsToMany(Group, { through: UserGroup });
+Group.belongsToMany(User, { through: UserGroup });
 
 User.hasMany(Post);
 Post.belongsTo(User);
@@ -92,5 +103,7 @@ module.exports = {
     db,
     User,
     Post,
-    Comment
+    Comment,
+    Group,
+    UserGroup
 }
