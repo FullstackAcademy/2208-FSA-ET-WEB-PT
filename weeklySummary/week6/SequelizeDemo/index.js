@@ -19,20 +19,6 @@ app.get("/", async (req, res, next) => {
   });
 
   res.send(posts);
-
-  // res.send(`
-  //       <body>
-  //           ${posts
-  //     .map(post => `
-  //         <div>
-  //           <h2>${post.title}</h2>
-  //           <h3>${post.user.name}</h3>
-  //           <p>${post.content}</p>
-  //         </div>
-  //     `).join("")
-  //   }
-  //       </body>
-  //   `);
 })
 
 app.get("/users", async (req, res, next) => {
@@ -60,13 +46,6 @@ app.get("/users/:id", async (req, res, next) => {
 app.get("/users/:id/groups", async (req, res, next) => {
   const foundUser = await User.findByPk(+req.params.id);
   const groups = await foundUser.getPosts();
-  // const groups = await Group.findAll({
-  //   where: {
-  //     user: {
-  //       id: +req.params.id
-  //     }
-  //   }
-  // });
 
   res.send(groups)
 });
@@ -92,6 +71,24 @@ app.get("/posts/:id/user", async (req, res, next) => {
   const user = await foundPost.getUser();
 
   res.send(user);
+});
+
+app.get("/group", async (req, res, next) => {
+  const groups = await Group.findAll();
+
+  res.send(groups);
+});
+
+app.put("/group/:id", async (req, res, next) => {
+  const group = await Group.update({
+    name: req.body.name
+  }, {
+    where: {
+      id: req.params.id
+    }
+  });
+
+  res.send(group);
 });
 
 const PORT = 3000;
