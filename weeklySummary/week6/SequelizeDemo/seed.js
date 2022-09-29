@@ -47,6 +47,19 @@ const seedDb = async () => {
 
     await louis.setGroups([group1, group2]);
 
+
+    /**
+     * username | Id  | sponsorId
+     * Ben         1
+     * Louis       2        1
+     */
+    // Member.hasMany(Member, { as: "sponsees" });
+    // Member.belongsTo(Member, { as: "sponsor", foreignKey: "sponsorId" });
+    // // member1.setSponsor(member2);
+    // member1.update({
+    //     sponsorId: member2.id
+    // });
+
     // await UserGroup.create({
     //     userId: louis.id,
     //     groupId: group1.id

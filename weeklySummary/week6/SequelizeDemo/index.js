@@ -1,3 +1,5 @@
+// localhost:3000
+
 const {
   Post, User, Group, Comment,
 } = require('./db');
@@ -5,11 +7,14 @@ const {
 const express = require("express");
 const app = express();
 
-app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: false }));
+
+const apiRouter = require("./api");
+app.use("/api", apiRouter);
 
 app.post("/", (req, res, next) => {
   res.send(req.body)
-})
+});
 
 app.get("/", async (req, res, next) => {
   const posts = await Post.findAll({
@@ -20,35 +25,6 @@ app.get("/", async (req, res, next) => {
 
   res.send(posts);
 })
-
-app.get("/users", async (req, res, next) => {
-  const users = await User.findAll({
-    include: [
-      Group
-    ]
-  });
-
-  res.send(users)
-})
-
-app.get("/users/:id", async (req, res, next) => {
-  const users = await User.findByPk(+req.params.id, {
-    include: [
-      Group,
-      Post,
-      Comment
-    ]
-  });
-
-  res.send(users)
-})
-
-app.get("/users/:id/groups", async (req, res, next) => {
-  const foundUser = await User.findByPk(+req.params.id);
-  const groups = await foundUser.getPosts();
-
-  res.send(groups)
-});
 
 app.put("/posts/:id", async (req, res, next) => {
   const newValue = {};
