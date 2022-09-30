@@ -59,6 +59,10 @@ const User = db.define('user', {
         //     value !== "user" ) // Then set it
         //     // Otherwise, dont
         // }
+    },
+    hidden: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
     }
 });
 

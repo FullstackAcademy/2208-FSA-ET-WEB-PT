@@ -1,0 +1,76 @@
+{
+  "data": {
+    "me": {
+      "library": {
+        "tracks": {
+          "__typename": "UserLibraryTrackPage",
+          "pagingInfo": { "offset": 0, "limit": 1 },
+          "items": [
+            {
+              "__typename": "UserLibraryTrackResponse",
+              "addedAt": { "isoString": "2022-09-13T06:16:55Z" },
+              "track": {
+                "_uri": "spotify:track:34c4wiTY2MQTyVWS2Nuz9u",
+                "data": {
+                  "__typename": "Track",
+                  "name": "Emotional Crank",
+                  "duration": { "totalMilliseconds": 74594 },
+                  "albumOfTrack": {
+                    "uri": "spotify:album:217LLrb47lzGE3HANjBLnn",
+                    "name": "Harbor",
+                    "artists": {
+                      "items": [
+                        {
+                          "uri": "spotify:artist:0Q2Tc5yZFJpumLMc7Yz4e4",
+                          "profile": { "name": "Tomppabeats" }
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02d5800f8720e1714bce93cad7",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851d5800f8720e1714bce93cad7",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273d5800f8720e1714bce93cad7",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    }
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:0Q2Tc5yZFJpumLMc7Yz4e4",
+                        "profile": { "name": "Tomppabeats" }
+                      }
+                    ]
+                  },
+                  "discNumber": 1,
+                  "trackNumber": 36,
+                  "contentRating": { "label": "NONE" },
+                  "playability": { "playable": true }
+                }
+              }
+            }
+          ],
+          "totalCount": 608
+        }
+      }
+    }
+  },
+  "extensions": {
+    "cacheControl": {
+      "version": 1.0,
+      "hints": [{ "path": ["me"], "maxAge": 0.0, "scope": "PRIVATE" }]
+    }
+  }
+}
