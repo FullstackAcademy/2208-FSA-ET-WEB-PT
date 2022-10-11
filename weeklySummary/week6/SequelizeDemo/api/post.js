@@ -6,7 +6,7 @@ const { Post, User } = require('../db');
 router.get("/", async (req, res) => {
     const posts = await Post.findAll({
         include: [
-            User
+            { model: User, as: "usersPosts" }
         ]
     });
 

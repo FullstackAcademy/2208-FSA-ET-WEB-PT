@@ -1,0 +1,413 @@
+{
+  "Locale": "en_US",
+  "Includes": {},
+  "Errors": [],
+  "Results": [
+    {
+      "UserNickname": "Jill T",
+      "Rating": 5,
+      "ReviewText": "I've never felt passionately about a mattress until Casper - I absolutely love it! I've had my personal Casper mattress for 2 year and have no complaints. I've slept on other mattresses and have had back pain the next day and that is not the case here. This purchase was for a guest room and every guest that has slept on it and has nothing but positive feedback. The shipping experience is also great. It ships quickly after ordering and arrives in just a few days.",
+      "ContextDataValues": {
+        "Age": {
+          "Value": "28",
+          "Id": "Age",
+          "ValueLabel": "28",
+          "DimensionLabel": "Age"
+        },
+        "Avatar": {
+          "Value": "9",
+          "Id": "Avatar",
+          "ValueLabel": "9",
+          "DimensionLabel": "Avatar"
+        }
+      },
+      "ProductId": "original-foam-v1",
+      "UserEmailAddress": null,
+      "ModeratorCodes": ["ASUA", "FEAT", "HMP", "PAIN"],
+      "Videos": [],
+      "CommentIds": [],
+      "Photos": [],
+      "TotalNegativeFeedbackCount": 0,
+      "RatingRange": 5,
+      "CampaignId": null,
+      "UserLocation": null,
+      "SecondaryRatingsOrder": [],
+      "TotalCommentCount": 0,
+      "ContextDataValuesOrder": ["Age", "Avatar"],
+      "ClientResponses": [],
+      "TagDimensionsOrder": [],
+      "TotalPositiveFeedbackCount": 0,
+      "IsRatingsOnly": false,
+      "LastModificationTime": "2022-09-10T15:00:24.000+00:00",
+      "Pros": null,
+      "ProductRecommendationIds": [],
+      "BadgesOrder": ["verifiedPurchaser"],
+      "AuthorId": "f16a2f629fdccb6fbb1675ae0f933428e904aa0c16e0f5bf7a246d8207d7364c",
+      "Helpfulness": null,
+      "SubmissionTime": "2022-09-09T18:51:10.000+00:00",
+      "AdditionalFields": {
+        "State": { "Label": "State", "Value": "NY", "Id": "State" },
+        "City": { "Label": "City", "Value": "Brooklyn", "Id": "City" },
+        "OrderId": {
+          "Label": "Order ID",
+          "Value": "R974194435",
+          "Id": "OrderId"
+        }
+      },
+      "Title": "Love it!!",
+      "AdditionalFieldsOrder": ["City", "OrderId", "State"],
+      "TotalFeedbackCount": 0,
+      "ModerationStatus": "APPROVED",
+      "IsFeatured": false,
+      "Cons": null,
+      "TagDimensions": {},
+      "SecondaryRatings": {},
+      "Badges": {
+        "verifiedPurchaser": {
+          "ContentType": "REVIEW",
+          "Id": "verifiedPurchaser",
+          "BadgeType": "Custom"
+        }
+      },
+      "SubmissionId": "r116973-en_166274941OpvEeUcXn",
+      "IsSyndicated": false,
+      "IsRecommended": null,
+      "LastModeratedTime": "2022-09-10T15:00:24.000+00:00",
+      "Id": "216969755",
+      "ContentLocale": "en_US"
+    },
+    {
+      "UserNickname": "Brian",
+      "Rating": 5,
+      "ReviewText": "Fast shipping, just as described. Very fast inflation bed in a box, literally took only a minute or two. Comfortable to sleep on after a month. Great mattress at a good price!",
+      "ContextDataValues": {
+        "IncentivizedReview": {
+          "Value": "True",
+          "Id": "IncentivizedReview",
+          "ValueLabel": "Yes",
+          "DimensionLabel": "Received an incentive for this review"
+        },
+        "Avatar": {
+          "Value": "9",
+          "Id": "Avatar",
+          "ValueLabel": "9",
+          "DimensionLabel": "Avatar"
+        }
+      },
+      "ProductId": "original-foam-v1",
+      "UserEmailAddress": null,
+      "ModeratorCodes": ["ASUD", "CMF", "FEAT", "HMP", "VALUE"],
+      "Videos": [],
+      "CommentIds": [],
+      "Photos": [],
+      "TotalNegativeFeedbackCount": 0,
+      "RatingRange": 5,
+      "CampaignId": null,
+      "UserLocation": null,
+      "SecondaryRatingsOrder": [],
+      "TotalCommentCount": 0,
+      "ContextDataValuesOrder": ["Avatar", "IncentivizedReview"],
+      "ClientResponses": [],
+      "TagDimensionsOrder": [],
+      "TotalPositiveFeedbackCount": 0,
+      "IsRatingsOnly": false,
+      "LastModificationTime": "2022-07-24T21:00:32.000+00:00",
+      "Pros": null,
+      "ProductRecommendationIds": [],
+      "BadgesOrder": ["incentivizedReview"],
+      "AuthorId": "845a244d4a0dc7a2dcfd43f490ce7f07695ce11fc1efede4f1fe992d0d152bf9",
+      "Helpfulness": null,
+      "SubmissionTime": "2022-07-24T01:03:10.000+00:00",
+      "AdditionalFields": {
+        "State": { "Label": "State", "Value": "Arizona", "Id": "State" },
+        "SubmissionType": {
+          "Label": "Submission Type",
+          "Value": "RebelMail",
+          "Id": "SubmissionType"
+        },
+        "City": { "Label": "City", "Value": "Yuma", "Id": "City" },
+        "TemplateType": {
+          "Label": "Template Type",
+          "Value": "2020_1030_Reviews_Mattress_Foam_Original_enUS",
+          "Id": "TemplateType"
+        },
+        "OrderId": {
+          "Label": "Order ID",
+          "Value": "R868024863",
+          "Id": "OrderId"
+        }
+      },
+      "Title": "Great, affordable, and  comfortable mattress!",
+      "AdditionalFieldsOrder": [
+        "City",
+        "OrderId",
+        "State",
+        "SubmissionType",
+        "TemplateType"
+      ],
+      "TotalFeedbackCount": 0,
+      "ModerationStatus": "APPROVED",
+      "IsFeatured": false,
+      "Cons": null,
+      "TagDimensions": {},
+      "SecondaryRatings": {},
+      "Badges": {
+        "incentivizedReview": {
+          "ContentType": "REVIEW",
+          "Id": "incentivizedReview",
+          "BadgeType": "Custom"
+        }
+      },
+      "SubmissionId": "r116973-en_16586245ntx4qeLwEe",
+      "IsSyndicated": false,
+      "IsRecommended": null,
+      "LastModeratedTime": "2022-07-24T21:00:32.000+00:00",
+      "Id": "213956127",
+      "ContentLocale": "en_US"
+    },
+    {
+      "UserNickname": "Laurie",
+      "Rating": 5,
+      "ReviewText": "I'm actually very happy with my new mattress. I had been having problems with a new Beauty rest mattress for about 5 years. I have a bad back so it made things worse. I'm a stomach sleep and had no support from it. I noticed that the original Casper was good for back sleepers and was a little worried. But, we had been on vacation and slept 2 nights on an Original Casper and I slept really well. We then stayed in 5 other hotel beds during that trip and in none of them did I sleep as well. I have discovered that I do enjoy sleeping on my back on the Casper. Something I have never like before. My personal feelings if I could imagine what it was like to sleep on a cloud this would be it. Sometimes I almost can't feel it under me. With a 100 day free trial you can't go wrong \r\nLove it.",
+      "ContextDataValues": {
+        "IncentivizedReview": {
+          "Value": "True",
+          "Id": "IncentivizedReview",
+          "ValueLabel": "Yes",
+          "DimensionLabel": "Received an incentive for this review"
+        },
+        "Avatar": {
+          "Value": "8",
+          "Id": "Avatar",
+          "ValueLabel": "8",
+          "DimensionLabel": "Avatar"
+        }
+      },
+      "ProductId": "original-foam-v1",
+      "UserEmailAddress": null,
+      "ModeratorCodes": ["ASUD", "CMF", "CSN", "FEAT", "HMP", "TRL"],
+      "Videos": [],
+      "CommentIds": [],
+      "Photos": [],
+      "TotalNegativeFeedbackCount": 0,
+      "RatingRange": 5,
+      "CampaignId": null,
+      "UserLocation": null,
+      "SecondaryRatingsOrder": [],
+      "TotalCommentCount": 0,
+      "ContextDataValuesOrder": ["Avatar", "IncentivizedReview"],
+      "ClientResponses": [],
+      "TagDimensionsOrder": [],
+      "TotalPositiveFeedbackCount": 0,
+      "IsRatingsOnly": false,
+      "LastModificationTime": "2022-06-28T19:00:38.000+00:00",
+      "Pros": null,
+      "ProductRecommendationIds": [],
+      "BadgesOrder": ["incentivizedReview"],
+      "AuthorId": "6af3a8d25c5c730db9188bcda9043ead82debc9a728e985b3bc77103cb365b47",
+      "Helpfulness": null,
+      "SubmissionTime": "2022-06-28T17:26:39.000+00:00",
+      "AdditionalFields": {
+        "State": { "Label": "State", "Value": "Kansas", "Id": "State" },
+        "SubmissionType": {
+          "Label": "Submission Type",
+          "Value": "RebelMail",
+          "Id": "SubmissionType"
+        },
+        "City": { "Label": "City", "Value": "De Soto", "Id": "City" },
+        "TemplateType": {
+          "Label": "Template Type",
+          "Value": "2020_1030_Reviews_Mattress_Foam_Original_enUS",
+          "Id": "TemplateType"
+        },
+        "OrderId": {
+          "Label": "Order ID",
+          "Value": "R250118682",
+          "Id": "OrderId"
+        }
+      },
+      "Title": "Mattress, what mattress?",
+      "AdditionalFieldsOrder": [
+        "City",
+        "OrderId",
+        "State",
+        "SubmissionType",
+        "TemplateType"
+      ],
+      "TotalFeedbackCount": 0,
+      "ModerationStatus": "APPROVED",
+      "IsFeatured": false,
+      "Cons": null,
+      "TagDimensions": {},
+      "SecondaryRatings": {},
+      "Badges": {
+        "incentivizedReview": {
+          "ContentType": "REVIEW",
+          "Id": "incentivizedReview",
+          "BadgeType": "Custom"
+        }
+      },
+      "SubmissionId": "r116973-en_16564371Gp3v4dHpTC",
+      "IsSyndicated": false,
+      "IsRecommended": null,
+      "LastModeratedTime": "2022-06-28T19:00:38.000+00:00",
+      "Id": "211904869",
+      "ContentLocale": "en_US"
+    },
+    {
+      "UserNickname": "Warren",
+      "Rating": 5,
+      "ReviewText": "We purchased the original Hybrid and the experience from unboxing, to setup, to finally testing this bad boy out, has been nothing short of amazing! We purchased in Feb 2022 and from day 1 to now, me and my wife have been able to enjoy uninterrupted slumber every night!!! NO MORE TOSSING AND TURNING FOR US!!! Buy one today!!!",
+      "ContextDataValues": {
+        "Age": {
+          "Value": "57",
+          "Id": "Age",
+          "ValueLabel": "57",
+          "DimensionLabel": "Age"
+        },
+        "Avatar": {
+          "Value": "5",
+          "Id": "Avatar",
+          "ValueLabel": "5",
+          "DimensionLabel": "Avatar"
+        }
+      },
+      "ProductId": "original-foam-v1",
+      "UserEmailAddress": null,
+      "ModeratorCodes": ["ASUD", "CPL", "FEAT", "HMP", "SETUP"],
+      "Videos": [],
+      "CommentIds": [],
+      "Photos": [],
+      "TotalNegativeFeedbackCount": 0,
+      "RatingRange": 5,
+      "CampaignId": null,
+      "UserLocation": null,
+      "SecondaryRatingsOrder": [],
+      "TotalCommentCount": 0,
+      "ContextDataValuesOrder": ["Age", "Avatar"],
+      "ClientResponses": [],
+      "TagDimensionsOrder": [],
+      "TotalPositiveFeedbackCount": 0,
+      "IsRatingsOnly": false,
+      "LastModificationTime": "2022-06-08T12:00:41.000+00:00",
+      "Pros": null,
+      "ProductRecommendationIds": [],
+      "BadgesOrder": [],
+      "AuthorId": "6fc06aa8c7e0550be2a5db0398339217d8e6887e78e79836e33249a47ae29aaa",
+      "Helpfulness": null,
+      "SubmissionTime": "2022-06-07T20:35:19.000+00:00",
+      "AdditionalFields": {
+        "State": { "Label": "State", "Value": "AZ", "Id": "State" },
+        "City": { "Label": "City", "Value": "Surprise", "Id": "City" }
+      },
+      "Title": "Best mattress purchase hands down!",
+      "AdditionalFieldsOrder": ["City", "State"],
+      "TotalFeedbackCount": 0,
+      "ModerationStatus": "APPROVED",
+      "IsFeatured": false,
+      "Cons": null,
+      "TagDimensions": {},
+      "SecondaryRatings": {},
+      "Badges": {},
+      "SubmissionId": "r116973-en_16546341t592CvDraQ",
+      "IsSyndicated": false,
+      "IsRecommended": null,
+      "LastModeratedTime": "2022-06-08T12:00:41.000+00:00",
+      "Id": "210484463",
+      "ContentLocale": "en_US"
+    },
+    {
+      "UserNickname": "Meredith",
+      "Rating": 5,
+      "ReviewText": "I love this mattress so much! After having the same SleepNumber mattress for 17 years, I decided to change and get the Casper since a friend had one and it was so comfortable. I have an autoimmune disease that causes muscle soreness but this mattress keeps me comfortable all night long. I have been able to sleep so soundly in this bed and wake up feeling refreshed and not sore in the slightest. I am so glad I made the switch and got a Casper bed!",
+      "ContextDataValues": {
+        "IncentivizedReview": {
+          "Value": "True",
+          "Id": "IncentivizedReview",
+          "ValueLabel": "Yes",
+          "DimensionLabel": "Received an incentive for this review"
+        },
+        "Avatar": {
+          "Value": "2",
+          "Id": "Avatar",
+          "ValueLabel": "2",
+          "DimensionLabel": "Avatar"
+        }
+      },
+      "ProductId": "original-foam-v1",
+      "UserEmailAddress": null,
+      "ModeratorCodes": ["CMF", "PAIN", "FEAT", "ASUD", "HMP"],
+      "Videos": [],
+      "CommentIds": [],
+      "Photos": [],
+      "TotalNegativeFeedbackCount": 0,
+      "RatingRange": 5,
+      "CampaignId": null,
+      "UserLocation": null,
+      "SecondaryRatingsOrder": [],
+      "TotalCommentCount": 0,
+      "ContextDataValuesOrder": ["Avatar", "IncentivizedReview"],
+      "ClientResponses": [],
+      "TagDimensionsOrder": [],
+      "TotalPositiveFeedbackCount": 0,
+      "IsRatingsOnly": false,
+      "LastModificationTime": "2022-05-23T11:45:49.000+00:00",
+      "Pros": null,
+      "ProductRecommendationIds": [],
+      "BadgesOrder": ["incentivizedReview"],
+      "AuthorId": "71d32c75dc623cbfe4961789d54cfad09ecf985ac7aa67a9cab6beae15690d86",
+      "Helpfulness": null,
+      "SubmissionTime": "2022-05-22T20:05:53.000+00:00",
+      "AdditionalFields": {
+        "State": { "Label": "State", "Value": "Illinois", "Id": "State" },
+        "SubmissionType": {
+          "Label": "Submission Type",
+          "Value": "RebelMail",
+          "Id": "SubmissionType"
+        },
+        "City": { "Label": "City", "Value": "Sterling", "Id": "City" },
+        "TemplateType": {
+          "Label": "Template Type",
+          "Value": "2020_1030_Reviews_Mattress_Foam_Original_enUS",
+          "Id": "TemplateType"
+        },
+        "OrderId": {
+          "Label": "Order ID",
+          "Value": "R621486367",
+          "Id": "OrderId"
+        }
+      },
+      "Title": "So glad I made the switch!",
+      "AdditionalFieldsOrder": [
+        "City",
+        "OrderId",
+        "State",
+        "SubmissionType",
+        "TemplateType"
+      ],
+      "TotalFeedbackCount": 0,
+      "ModerationStatus": "APPROVED",
+      "IsFeatured": false,
+      "Cons": null,
+      "TagDimensions": {},
+      "SecondaryRatings": {},
+      "Badges": {
+        "incentivizedReview": {
+          "ContentType": "REVIEW",
+          "Id": "incentivizedReview",
+          "BadgeType": "Custom"
+        }
+      },
+      "SubmissionId": "r116973-en_16532499cU9KweBayM",
+      "IsSyndicated": false,
+      "IsRecommended": null,
+      "LastModeratedTime": "2022-05-23T11:45:49.000+00:00",
+      "Id": "209423348",
+      "ContentLocale": "en_US"
+    }
+  ],
+  "TotalResults": 1366,
+  "Limit": 5,
+  "HasErrors": false,
+  "Offset": 0
+}

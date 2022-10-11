@@ -8,8 +8,11 @@ const UserGroup = require("./usergroup");
 User.belongsToMany(Group, { through: UserGroup });
 Group.belongsToMany(User, { through: UserGroup });
 
-User.hasMany(Post);
-Post.belongsTo(User);
+User.hasMany(Post, { as: "postsByUser" });
+Post.belongsTo(User, { as: "usersWhoPosted" });
+
+User.belongsTo(Post, { as: "postsByUser" });
+Post.hasMany(User, { as: "usersWhoPosted" });
 
 Comment.belongsTo(User);
 User.hasMany(Comment);
