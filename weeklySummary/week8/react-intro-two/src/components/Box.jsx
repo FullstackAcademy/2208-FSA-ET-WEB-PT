@@ -2,6 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Box = ({ color, selectedColor, setSelectedColor }) => {
+  // const {
+  //   color,
+  //   selectedColor,
+  //   setSelectedColor
+  // } = props;
   // Buisness Logic
   const boxStyles = {
     background: color,
