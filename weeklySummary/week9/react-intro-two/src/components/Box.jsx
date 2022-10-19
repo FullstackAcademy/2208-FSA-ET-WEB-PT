@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import IsSelectedIndicator from "./IsSelectedIndicator";
 
 const Box = ({ color, selectedColor, setSelectedColor }) => {
   // const {
@@ -22,7 +23,11 @@ const Box = ({ color, selectedColor, setSelectedColor }) => {
   };
 
   // Presentation Logic
-  return <div onClick={selectColor} style={boxStyles}></div>;
+  return (
+    <div onClick={selectColor} style={boxStyles}>
+      <IsSelectedIndicator color={color} selectedColor={selectedColor} />
+    </div>
+  );
 };
 
 Box.propTypes = {

@@ -1,8 +1,7 @@
 import './App.css';
 import logo from './logo.svg';
 import React, { useState, useEffect } from 'react';
-import UserList from './components/UserList';
-import UserGallery from './components/UserGallery';
+import ColorSelector from "./components/ColorSelector"
 
 const appStyles = {
   backgroundColor: "cornSilk"
@@ -45,9 +44,10 @@ function App() {
   return (
     <div className="App" style={appStyles}>
       <img src={logo} className="App-logo" alt="logo" />
-      <p>UPDATES: {updateCount}</p>
+      {/* <p>UPDATES: {updateCount}</p>
       <UserGallery users={users} />
-      <UserList users={users} />
+      <UserList users={users} /> */}
+      <ColorSelector />
     </div>
   );
 }
