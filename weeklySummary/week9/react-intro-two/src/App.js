@@ -1,7 +1,9 @@
 import './App.css';
 import logo from './logo.svg';
 import React, { useState, useEffect } from 'react';
-import ColorSelector from "./components/ColorSelector"
+import RouterComponent from './components/RouterComponent';
+import { Link } from 'react-router-dom';
+
 
 const appStyles = {
   backgroundColor: "cornSilk"
@@ -43,11 +45,14 @@ function App() {
 
   return (
     <div className="App" style={appStyles}>
-      <img src={logo} className="App-logo" alt="logo" />
-      {/* <p>UPDATES: {updateCount}</p>
-      <UserGallery users={users} />
-      <UserList users={users} /> */}
-      <ColorSelector />
+      <img src={logo} className="App-logo" alt="logo" />      
+      <div>
+        <Link to="/"><button>Home</button></Link>
+        <Link to="/user-gallery"><button>Gallery</button></Link>
+        <Link to="/colors"><button>Colors</button></Link>
+      </div>
+
+      <RouterComponent users={users} />
     </div>
   );
 }
