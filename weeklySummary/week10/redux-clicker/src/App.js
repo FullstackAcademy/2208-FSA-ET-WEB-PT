@@ -1,34 +1,37 @@
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
+import Name from './components/Name';
 import Game from './components/Game';
-import { useDispatch, useSelector } from 'react-redux';
-import { changeName } from './features/playerSlice';
+import { Routes, Route, Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function App() {
-  const playerName = useSelector(state => state.player.username);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    const username = localStorage.getItem("clicker_username");
-
-    dispatch(changeName(username))
-  });
-
-  const handleNameChange = (event) => {
-    dispatch(changeName(event.target.value));
-    localStorage
-      .setItem(
-        "clicker_username",
-        event.target.value
-      )
-  }
+  const name = useSelector((state) => state.player.username)
+  const [userCreated, setUserCreated] = useState(false);
 
   // VIEW: What the user sees
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Name: {playerName}</h1>
-        <input value={playerName} onChange={handleNameChange} type="text"></input>
+        <div>
+          {userCreated && <p style={{ color: 'green' }}>New User Just Made</p>}
+          <p>Username: {name}</p>
+          <Link to="/"><button>Home</button></Link>
+          <Link to="/name"><button>Set Name</button></Link>
+          <Link to="/game/1246fdww532dg"><button>Play Game</button></Link>
+          {
+            name === "Admin" &&
+            <Link to="/admin"><button>Admin Settings</button></Link>
+          }
+        </div>
+        <Routes>
+          <Route path="/name" element={<Name setUserCreated={setUserCreated} />} />
+          <Route path="/game/:gameId" element={<Game />} />
+          {
+            name === "Admin" &&
+            <Route path="/admin" element={<p>Welcome Admin!</p>} />
+          }
+        </Routes>
       </header>
     </div>
   );

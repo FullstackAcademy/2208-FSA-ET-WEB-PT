@@ -4,9 +4,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addPoint, subtractPoint } from '../features/gameSlice';
 import ChildOne from './ChildOne';
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const Game = () => {
     const dispatch = useDispatch();
+    const { gameId } = useParams();
 
     // STATE: Info being held
     const points = useSelector((state) => state.game.points);
@@ -25,6 +27,7 @@ const Game = () => {
     return (
         <div>
             <img onClick={handleButtonClick} src={logo} className="App-logo" alt="logo" />
+            <p>{gameId}</p>
             <h1 style={{
                 color: isRed ? "red" : "white"
             }}>Points: {points}</h1>
