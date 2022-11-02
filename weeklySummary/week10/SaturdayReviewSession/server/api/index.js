@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.use('/recipes', require("./recipeRouter"));
+router.use("/movies", require("./movies"));
+router.use("/genres", require("./genres"));
 
 module.exports = router;
