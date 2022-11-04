@@ -21,4 +21,20 @@ router.get('/:id', async (req, res, next) => {
     res.send(recipe);
 })
 
+router.post('/', async (req, res, next) => {
+    const {
+        name,
+        author,
+        timeToMake
+    } = req.body;
+
+    await Recipe.create({
+        name,
+        author,
+        timeToMake
+    });
+
+    res.sendStatus(204);
+})
+
 module.exports = router;

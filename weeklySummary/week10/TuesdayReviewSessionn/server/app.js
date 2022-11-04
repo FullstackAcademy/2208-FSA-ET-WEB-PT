@@ -4,11 +4,10 @@ const cors = require('cors')
 const volleyball = require('volleyball')
 const app = express()
 
-
-
 app.use(cors())
-app.use(volleyball)
-
+app.use(volleyball);
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // GET localhost:3000/recipes
 // GET localhost:3000/api/recipes
