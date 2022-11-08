@@ -17,6 +17,18 @@ export const selectedRecipeSlice = createSlice({
         setLoading: (state, action) => {
             state.loadingRecipe = action.payload;
         },
+        /**
+         * Given all of a recipes info, this is going to updated that info
+         */
+        updateSelectedRecipe: (state, action) => {
+            const updatedRecipeInfo = action.payload;
+            const oldRecipeInfo = state.recipe;
+
+            state.recipe = {
+                ...oldRecipeInfo,
+                ...updatedRecipeInfo
+            };
+        },
         resetSelectedRecipe: (state) => {
             console.log(initialState);
             state.recipe = initialState.recipe;
@@ -25,5 +37,5 @@ export const selectedRecipeSlice = createSlice({
     }
 });
 
-export const { setRecipe, setLoading, resetSelectedRecipe } = selectedRecipeSlice.actions;
+export const { setRecipe, setLoading, resetSelectedRecipe, updateSelectedRecipe } = selectedRecipeSlice.actions;
 export default selectedRecipeSlice.reducer;

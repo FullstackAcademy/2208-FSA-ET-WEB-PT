@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { resetSelectedRecipe, setLoading, setRecipe } from '../store/selectedRecipeSlice';
+import UpdateRecipeForm from './UpdateRecipeForm';
 
 // http://localhost:3000/recipes/1
 
@@ -44,6 +45,8 @@ const SingleRecipePage = () => {
 
     return (
         <div>
+            <UpdateRecipeForm selectedRecipe={recipe} />
+
             <h1>{recipe.name}</h1>
             <p>{recipe.timeToMake}</p>
             <p>{recipe.author}</p>

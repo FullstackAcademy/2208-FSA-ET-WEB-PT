@@ -14,6 +14,6 @@ const Recipe = db.define("recipe", {
         type: Sequelize.STRING,
         defaultValue: "unknown"
     }
-})
+});
 
 module.exports = Recipe;

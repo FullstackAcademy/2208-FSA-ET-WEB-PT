@@ -37,4 +37,40 @@ router.post('/', async (req, res, next) => {
     res.sendStatus(204);
 })
 
+router.put('/:id', async (req, res, next) => {
+    // Read data from the user input
+    const { id } = req.params;
+    const {
+        name,
+        author,
+        timeToMake
+    } = req.body;
+
+    // Validate data if need
+    // Null = A human decided to leave this empty
+    // Undefined = A computer decided to leave this empty
+
+    // Use the data to update your db
+    const recipe = await Recipe.findByPk(id);
+    recipe.update({
+        name,
+        author,
+        timeToMake
+    });
+    res.send(200)
+});
+
 module.exports = router;
+
+    // original = {
+    //     name: "Soup",
+    //     author: "Ben",
+    //     timeToMake: 132453,
+    // }
+
+
+    // req.body = {
+    //     name: undefined,
+    //     author: "Louis",
+    //     timeToMake: undefined
+    // }
