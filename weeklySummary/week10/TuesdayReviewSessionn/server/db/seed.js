@@ -32,9 +32,11 @@ const seed = async () => {
     console.log("DONE CREATING INGREDIENTS...");
 
     console.log("ADDING INGREDIENTS TO RECIPES...");
+
     turkeyDin.addIngredients([turkey, gravey]);
     turkeySoup.addIngredients([turkey, soup]);
     cornbread.addIngredients([corn, butter]);
+
     console.log("DONE ADDING INGREDIENTS TO RECIPES...");
 
     console.log("DONE RUNNING SEED...");

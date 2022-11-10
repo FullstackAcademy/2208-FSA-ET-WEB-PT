@@ -25,7 +25,7 @@ router.post('/', async (req, res, next) => {
     const {
         name,
         author,
-        timeToMake
+        timeToMake,
     } = req.body;
 
     await Recipe.create({
@@ -33,6 +33,9 @@ router.post('/', async (req, res, next) => {
         author,
         timeToMake
     });
+
+    // const ingredientToAdd = await Ingredient.findByPk(ingredientId)
+    // recipe.addIngredient(ingredientToAdd)
 
     res.sendStatus(204);
 })
@@ -58,6 +61,28 @@ router.put('/:id', async (req, res, next) => {
         timeToMake
     });
     res.send(200)
+});
+
+router.delete('/:recipeId', async (req, res, next) => {
+    const notFoundMessage = "The recipe you're trying to delete doesn't exist!";
+    try {
+        const { recipeId } = req.params;
+        const recipe = await Recipe.findByPk(recipeId);
+
+        // If recipe does not exist / if recipe is null
+        if (!recipe) {
+            throw new Error(notFoundMessage);
+        }
+
+        await recipe.destroy();
+        res.sendStatus(204);
+    } catch (err) {
+        if (err.message === notFoundMessage)
+            return res.status(404).send({ message: notFoundMessage });
+
+        console.error(err);
+        next(err);
+    }
 });
 
 module.exports = router;

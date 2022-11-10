@@ -16,9 +16,15 @@ export const allRecipesSlice = createSlice({
             // [{turkey}, {stuffing}, ... , {new recipe}]
             // state.recipes = [...state.recipes, action.payload];
             state.recipes.push(action.payload);
+        },
+        deleteRecipe: (state, action) => {
+            const recipeToDeleteId = action.payload;
+            state.recipes = state.recipes.filter(
+                (recipe) => recipe.id !== recipeToDeleteId
+            )
         }
     }
 });
 
-export const { setAllRecipes, addRecipe } = allRecipesSlice.actions;
+export const { setAllRecipes, addRecipe, deleteRecipe } = allRecipesSlice.actions;
 export default allRecipesSlice.reducer;

@@ -2,7 +2,7 @@ const db = require('./db');
 const Recipe = require('./recipe');
 const Ingredient = require('./ingredient');
 
-Recipe.belongsToMany(Ingredient, { through: "RecipesIngredients", unique: true });
+Recipe.belongsToMany(Ingredient, { through: "RecipesIngredients" });
 Ingredient.belongsToMany(Recipe, { through: "RecipesIngredients" });
 
 // Recipe.belongsToMany(Ingredient, { through: "PossibleExtraIngredients" });
