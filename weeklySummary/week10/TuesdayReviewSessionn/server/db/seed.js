@@ -1,5 +1,5 @@
 const db = require("./db");
-const { Recipe, Ingredient } = require("./");
+const { Recipe, Ingredient, User } = require("./");
 
 const dummyRecipes = [
     { name: "Turkey Dinner", timeToMake: 20000, author: "Louis" }, // => Promise<create new recipe> 
@@ -38,6 +38,14 @@ const seed = async () => {
     cornbread.addIngredients([corn, butter]);
 
     console.log("DONE ADDING INGREDIENTS TO RECIPES...");
+    console.log("ADDING USERS TO DB...");
+
+    User.create({
+        username: "Louis",
+        password: "Dogs4Lyfe"
+    });
+
+    console.log("DONE CREATING USERS...");
 
     console.log("DONE RUNNING SEED...");
 };
