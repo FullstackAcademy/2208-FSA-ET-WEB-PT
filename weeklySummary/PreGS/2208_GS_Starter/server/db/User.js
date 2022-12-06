@@ -55,11 +55,14 @@ User.prototype.generateToken = function () {
 };
 
 User.authenticate = async function ({ username, password }) {
+    // Find the user who the client wants to log in as
     const user = await this.findOne({
         where: {
             username
         }
     });
+
+    // Check the password they gave against our password
     if (user && await bcrypt.compare(password, user.password)) {
         return jwt.sign({ id: user.id }, JWT);
     }
